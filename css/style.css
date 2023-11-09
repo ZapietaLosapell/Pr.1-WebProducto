@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
 }
 
 .container {
@@ -11,6 +12,9 @@
     background-color: aquamarine;
 }
 
+h1 {
+    color: rgb(29, 29, 29);
+}
 
 /* .container-1 {
     position: relative;
@@ -36,8 +40,14 @@
     /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
-    background-color: transparent;
-    border-bottom: black 2px solid;
+    border-bottom: rgb(29, 29, 29) 2px solid;
+    font-size: 0.7em;
+}
+
+a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: rgb(45, 45, 45);
 }
 
 .embed-responsive-item {
