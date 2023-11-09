@@ -49,10 +49,18 @@
     font-size: 0.7em;
 }
 
+.nav-item {
+    text-align: center;
+}
+
 .nav-item > a {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     color: rgb(4, 4, 4);
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 .embed-responsive-item {
