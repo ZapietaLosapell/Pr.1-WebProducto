@@ -8,33 +8,52 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body">
     <header>
-        <div class="container-1">
-        <div class="centrar"> 
-        <img id="logo" src="recursos/logo">
-        </div>
+        <!-- <div class="container-1">
+
+            <div class="centrar"> 
+            <img id="logo" src="recursos/logo">
+            </div>
+        </div> -->
         
-        <h1>PERFUMES</h1>
-        <nav>
-            <ul>
-                <li><a href="">MUJER</a></li>
-                <li><a href="">HOMBRE</a></li>
-                <li><a href="">LOUWE X ON</a></li>
-                <li><a href="">REGALOS</a></li>
-                <li><a href="">ARTESANÍA</a></li>
-                <li><a href="">STORIES</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm justify-content-center">
+            <div class="container-fluid" id="menu">
+                <div>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="recursos/logo" alt="Logotipo de Loewe" width="100" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <div>
+                    <h1>PERFUMES</h1>
+                </div>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">MUJER</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">HOMBRE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">LOUWE X ON</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">REGALOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ARTESANÍA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">STORIES</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
          
-        </div>
-
+        <div class="container-fluid">
             <div class="embed-responsive embed-responsive-16by9">
                 <video class="embed-responsive-item" loop controls autoplay muted="muted">
                     <source src="recursos/loewevideo.mp4" type="video/mp4">
                      <img id="alternative" src="recursos/alternative.jpg">
                 </video>
              </div>
+        </div>
 
     </header>
     <main>
