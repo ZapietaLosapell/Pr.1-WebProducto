@@ -49,7 +49,7 @@
     font-size: 0.7em;
 }
 
-a {
+.nav-item > a {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     color: rgb(45, 45, 45);
