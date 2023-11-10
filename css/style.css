@@ -70,3 +70,9 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    .navbar-nav {
+        padding-bottom: 25px;
+    }
+
+}
