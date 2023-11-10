@@ -14,35 +14,14 @@
 
 #perfumes {
     color: rgb(29, 29, 29);
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .navbar-brand {
     padding-left: 0.8em;
 }
 
-/* .container-1 {
-    position: relative;
-}
-
-.centrar {
-    margin: 0;
-    position: absolute;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-}
-
-#logo {
-    width: 25%;
-} */
-
-/* .navbar {  
-    background-color: aquamarine;
-} */
-
 #menu {
-    /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
     border-bottom: rgb(29, 29, 29) 1.5px solid;
@@ -66,8 +45,6 @@
 .embed-responsive-item {
     width: 100%;
     height: 100vh;
-    /* min-width: 100%;
-    min-height: 100vh; */
     object-fit: cover;
     position: absolute;
     left: 0px;
