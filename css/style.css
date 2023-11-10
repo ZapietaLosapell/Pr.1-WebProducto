@@ -24,8 +24,9 @@
 #menu {
     display: flex;
     flex-direction: column;
-    border-bottom: rgb(29, 29, 29) 1.5px solid;
     font-size: 0.7em;
+    border-bottom: 1.5px rgb(4, 4, 4) solid;
+    width: 90%;
 }
 
 .nav-item {
@@ -43,7 +44,7 @@
 }
 
 .embed-responsive-item {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
     position: absolute;
