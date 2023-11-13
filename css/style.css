@@ -145,7 +145,7 @@ header {
 
     .card-2.selected {
         transform: scale(1) rotateZ(0); 
-        filter: grayscale(40%); 
+        filter: grayscale(40%) drop-shadow(0 0 0rem); 
         opacity: 1;
     }
 
@@ -159,6 +159,7 @@ header {
 
     .card-2.backSale {
         transform: scale(1) rotateZ(0);
+        filter: drop-shadow(0 0 0rem);
     }
 }
 
@@ -186,8 +187,7 @@ header {
         -webkit-filter: grayscale(50%);
         transition: filter 0.8s ease-in;
         &:hover {
-            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
         }
     }
-
 }
