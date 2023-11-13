@@ -3,20 +3,35 @@
 
 const pase2 = [...document.querySelectorAll(".card-2")];
 const pase1 = [...document.querySelectorAll(".card-1")];
-const control = document.getElementById("control");
+const control = document.getElementById("controlPrev");
 
  pase1.forEach(card1 => {
     "use strict";
      control.addEventListener("click", () => {
-         card1.classList.toggle("sale");
+         card1.classList.toggle("backSelected");
      });
  });
 
 pase2.forEach(card2 => {
     "use strict";
     control.addEventListener("click", () => {
-        card2.classList.toggle("selected");
+        card2.classList.toggle("backSale");
     });
 });
 
+const controls = document.getElementById("controlNext");
+
+ pase1.forEach(carda => {
+    "use strict";
+     controls.addEventListener("click", () => {
+         carda.classList.toggle("sale");
+     });
+ });
+
+pase2.forEach(cardb => {
+    "use strict";
+    controls.addEventListener("click", () => {
+        cardb.classList.toggle("selected");
+    });
+});
 

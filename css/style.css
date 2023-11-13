@@ -85,20 +85,31 @@ header {
     background-color: #D2D8BE; 
     border-radius: 10px;
     padding: 10px;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-out;
     left: calc(50% - 150px);
     margin-top: 50px;
 }
 
 .card-2.selected {
     transform: scale(1.08) rotateZ(0.1rad);
-    opacity: 0.9;
+    opacity: 0.9 ease-out;
     filter: grayscale(50%) drop-shadow(0 0 0.75rem rgb(208, 237, 157));
 }
 
 .card-1.sale {
     opacity: 1;
-    transition: 1s;
+    transition: 0.5s ease-out;
+}
+
+.card-2.backSale {
+    transform: scale(1.08) rotateZ(-0.1rad);
+    opacity: 0.9 ease-out;
+    filter: grayscale(50%) drop-shadow(0 0 0.75rem rgb(208, 237, 157));
+}
+
+.card-1.backSelected {
+    opacity: 1;
+    transition: 0.7s ease-out;
 }
 
 .carousel-item > img {
@@ -134,14 +145,22 @@ header {
 
     .card-2.selected {
         transform: scale(1) rotateZ(0); 
-        filter: grayscale(40%); 
+        filter: grayscale(40%) drop-shadow(0 0 0rem); 
+        opacity: 1;
     }
 
     .card-1.sale {
         transform: rotateY(0); 
         filter: blur(1px);
+        &:hover {
+            filter: blur(0px);
+        }
     }
 
+    .card-2.backSale {
+        transform: scale(1) rotateZ(0);
+        filter: drop-shadow(0 0 0rem);
+    }
 }
 
 @media (max-width: 350px) {
@@ -159,4 +178,16 @@ header {
         left: 0;
     }
 
+    .card-1.sale {
+        filter: blur(0);
+    }
+
+    .card-2.backSale {
+        filter: gray;
+        -webkit-filter: grayscale(50%);
+        transition: filter 0.8s ease-in;
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
 }
