@@ -3,13 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
-}
-
-.container {
-    width: 100vw;
-    height: 100vh;
-    transform: translate(0, 100%);
-    background-color: aquamarine;
+    max-width: 100%;
 }
 
 #perfumes {
@@ -31,6 +25,7 @@
     font-size: 0.7em;
     border-bottom: 1.5px rgb(4, 4, 4) solid;
     width: 90%;
+    margin: 20px 0;
 }
 
 .nav-item {
@@ -45,7 +40,6 @@
 
 .navbar-toggler {
     border: none;
-
 }
 
 .embed-responsive-item {
@@ -58,7 +52,99 @@
     z-index: -1;  
 }
 
-@media screen and (max-width: 350px) {
+header {
+    height: 100vh;
+}
+
+#sec-carousel {
+    height: 101vh;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.carousel-indicators {
+    bottom: 3rem;
+    max-width: 250px;
+    margin: auto;
+}
+
+.carousel-inner {
+    width: 90%; 
+    height: 550px;
+    overflow: hidden;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.carousel-item {
+    width: 300px;
+    height: 400px;
+    background-color: #D2D8BE; 
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.7s ease-in-out;
+    left: calc(50% - 150px);
+    margin-top: 50px;
+}
+
+.card-2.selected {
+    transform: scale(1.08) rotateZ(0.1rad);
+    opacity: 0.9;
+    filter: grayscale(50%) drop-shadow(0 0 0.75rem rgb(208, 237, 157));
+}
+
+.card-1.sale {
+    opacity: 1;
+    transition: 1s;
+}
+
+.carousel-item > img {
+    width: 100%;
+    height: fit-content;
+}
+
+.carousel-caption {
+    top: 320px;
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        padding-bottom: 25px;
+    }
+
+    .carousel-inner {
+        width: 95%;
+        height: auto;
+    }
+
+    .carousel-item {
+        width: 100%;
+        height: auto;
+        left: 0;
+        margin-top: 0;
+        padding: 0;   
+    }
+
+    .carousel-indicators {
+        bottom: 2rem;
+    }
+
+    .card-2.selected {
+        transform: scale(1) rotateZ(0); 
+        filter: grayscale(40%); 
+    }
+
+    .card-1.sale {
+        transform: rotateY(0); 
+        filter: blur(1px);
+    }
+
+}
+
+@media (max-width: 350px) {
     #perfumes {
         font-size: 2em;
         padding-top: 5px;
@@ -68,11 +154,9 @@
         margin: 0;
         padding: 0;
     }
-}
 
-@media screen and (max-width: 576px) {
-    .navbar-nav {
-        padding-bottom: 25px;
+    .carousel-item {
+        left: 0;
     }
 
 }
