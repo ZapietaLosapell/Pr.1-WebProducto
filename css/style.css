@@ -36,78 +36,127 @@
 } */
 
 
-.slider{
-    position: relative;
-    width: 100%;
-    height: 370px;
-    overflow: hidden;
-    padding: 20px;
-
-}
-
-.card{
-    position: absolute;
-    width: 200px;
-    height: 300px;
-    background-color: #D2D8BE; 
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    transition: 0.5s;
-    left: calc(50% - 110px);
-    top: 0;
-
-}
-.card > img{
-    width: 100%;
-    height: fit-content;
-}
-.card > h3{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-#next, #prev{
-    position: absolute;
-    top: 40%;
-    color: black;
-    background-color: transparent;
-    border: none;
-    font-size: x-large;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    left: 60px;
-    
-}
-
-#next{
-    left: unset;
-    right: 60px;
-
-}
-
 #best_sellers{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    margin: 5dvh;
+
 }
 #best_sellers > img{
-     width: 55%;
+     width: 60%;
      height: 50%;
-
+    
 }
 
 .text{
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     padding-right: 35px;
-    position: relative;
+
     
 }
 .text > h2{
-    font-size: 120px;
+    font-size: 110px;
     font-style: bold;
     
+    
+}
+
+#galery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 58vh;
+    
+}
+
+#galery > div{
+    flex: 22%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 6px;
+    
+    
+    /*Para el posicionamiento de las imágenes*/
+    background-position: center;
+    background-size: cover;
+}
+
+/*Imagen de fondo para cada div*/
+#galery > div:nth-child(1){
+    background-image: url(../recursos/tomato.jpeg);
+    border-radius: 20px;
+}
+
+#galery > div:nth-child(2){
+    background-image: url(../recursos/cypres.png);
+    border-radius: 20px; 
+}
+
+#galery > div:nth-child(3){
+    background-image: url(../recursos/Oregano.jpg);
+    border-radius: 20px;
+}
+
+#galery > div:nth-child(4){
+    background-image: url(../recursos/tomatojabon.jpg);
+    border-radius: 20px;
+}
+
+#galery > div:nth-child(5){
+    background-image: url(../recursos/sutileza.png);
+    border-radius: 20px;
+}
+
+#galery > div:nth-child(6){
+    background-image: url(../recursos/elixir.png);
+    border-radius: 20px;
+}
+#galery > div:nth-child(7){
+    background-image: url(../recursos/LOEWE\ Perfumes-2.jpg);
+    border-radius: 20px;
+}
+#galery > div:nth-child(8){
+    background-image: url(../recursos/001mujer.png);
+    border-radius: 20px;
+}
+
+#galery > div > div{
+    opacity: 0;
+    background-color:#777E5C; 
+    border-radius: 20px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-items: center;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#galery > div > div > h3, p,li{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.ver > a{
+    color: white;
+    text-align: center; 
+    text-decoration: none;
+    list-style: none;
+    font-size: 10px;
+}
+
+#galery > div > div:hover{
+    opacity: 1;
 }
