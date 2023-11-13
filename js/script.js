@@ -3,7 +3,6 @@
 
 const pase2 = [...document.querySelectorAll(".card-2")];
 const pase1 = [...document.querySelectorAll(".card-1")];
-const pase3 = [...document.querySelectorAll(".card-2")];
 const control = document.getElementById("controlPrev");
 
  pase1.forEach(card1 => {
