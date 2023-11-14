@@ -5,37 +5,6 @@
     font-family: 'Playfair Display', serif;
 }
 
-
-.logo{
-    width: 400px;
-   justify-content: center;
-}
-
-.container {
-    width: 100vw;
-    height: 100vh;
-    transform: translate(0, 100%);
-    background-color: aquamarine;
-}
-
-/*
-.container-1 {
-    position: relative;
-}
-
-.centrar {
-    margin: 0;
-    position: absolute;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-}
-
-#logo {
-    width: 25%;
-} */
-
-
 #best_sellers{
     display: flex;
     justify-content: center;
