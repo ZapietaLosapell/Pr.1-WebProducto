@@ -46,6 +46,5 @@ function fijarMenu() {
       document.getElementById("encontrar").className = "micono";
     } else {
       document.getElementById("blanco").className = "navbar";
-      document.getElementById("navbarNav").className = "blanco-2";
     }
   }

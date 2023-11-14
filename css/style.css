@@ -166,12 +166,7 @@ section {
     max-width: 99%;
     display: flex;
     justify-content: center;
-    top: 6.5rem;
-}
-
-#novedades {
-    z-index: 4;
-    padding: 5px;
+    top: 0;
 }
 
 #novedades > h1 {
@@ -207,6 +202,7 @@ section {
     float: right;
     width: 4rem;
 }
+
 
 
 
@@ -338,7 +334,6 @@ section {
 
 
 
-
 @media (max-width: 576px) {
 
     #novedades {
@@ -393,25 +388,44 @@ section {
     }
 
     #perfumes {
-        font-size: 1.5em;
-        padding-right: 0;
+        font-size: 2em;
     }
 
     .navbar {
-        padding-right: 0;
-        justify-content: space-evenly;
+        flex-direction: column;
     } 
+
+    .navbar-brand {
+        margin: auto;
+    }
+
+    #divloewe {
+        height: 60%;
+        padding: 0;
+    }
+
     .mdesplegado {
         padding-left: 0;
         padding-top: 1em;
     }  
     
+    .blancoFijo {
+        gap: 0;
+        height: 25%;
+        flex-direction: column;
+    }
+    
+    .blancoFijoMenu {
+        display: contents;
+        position: absolute;
+    }
+        
 }
+
 
 @media (max-width: 350px) {
     #perfumes {
-        font-size: 1.2rem;
-        padding-top: 5px;
+        font-size: 1.5rem;
     }
 
     #menu {
