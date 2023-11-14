@@ -21,7 +21,7 @@ pase2.forEach(card2 => {
 
 const controls = document.getElementById("controlNext");
 
- pase1.forEach(carda => {
+pase1.forEach(carda => {
     "use strict";
      controls.addEventListener("click", () => {
          carda.classList.toggle("sale");
@@ -35,3 +35,17 @@ pase2.forEach(cardb => {
     });
 });
 
+
+window.onscroll = function() {fijarMenu()};
+
+function fijarMenu() {
+    if (document.documentElement.scrollTop > 20) {
+      document.getElementById("blanco").className = "blancoFijo";
+      document.getElementById("mdesplegado").className = "mdesplegado";
+      document.getElementById("blancoFijoMenu").className = "blancoFijoMenu";
+      document.getElementById("encontrar").className = "micono";
+    } else {
+      document.getElementById("blanco").className = "navbar";
+      document.getElementById("navbarNav").className = "blanco-2";
+    }
+  }
