@@ -11,6 +11,7 @@
     color: rgb(29, 29, 29);
     font-size: 4em;
     margin-top: 4px;
+    padding-right: 2rem;
 }
 
 .navbar {
@@ -30,6 +31,7 @@
     align-items: center;
     gap: 25px 10px;
     height: 25%;
+    padding: 0 20px;
 }
 
 .blancoFijoMenu {
@@ -68,6 +70,10 @@
     border: none;
 }
 
+.navbar-toggler-icon {
+    background-image: url(../recursos/menu.png);
+}
+
 .embed-responsive-item {
     width: 100vw;
     height: 100vh;
@@ -78,9 +84,8 @@
     z-index: -1;  
 }
 
-header {
+.altura {
     height: 100vh;
-    transition: 0.5s ease;
 }
 
 main {
@@ -169,6 +174,10 @@ section {
     top: 0;
 }
 
+#novedades {
+    height: 99%;
+}
+
 #novedades > h1 {
     font-size: 6em;
     writing-mode: vertical-lr;
@@ -185,7 +194,7 @@ section {
 
 .card-title {
     border: 1px solid grey;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px;
     font-size: 1.2em;
     vertical-align: baseline;
     text-align: center;
@@ -210,7 +219,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5dvh;
 
 }
 #best_sellers > img{
@@ -328,6 +336,20 @@ section {
 
 
 
+footer {
+    height: 40vh;
+}
+
+.miami {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 
 
 
@@ -389,6 +411,7 @@ section {
 
     #perfumes {
         font-size: 2em;
+        padding-right: 0;
     }
 
     .navbar {
@@ -407,6 +430,7 @@ section {
     .mdesplegado {
         padding-left: 0;
         padding-top: 1em;
+        flex-direction: column;
     }  
     
     .blancoFijo {
