@@ -31,6 +31,7 @@
     gap: 25px 10px;
     height: 25%;
     padding: 0 20px;
+    margin-left: 0.5rem;
 }
 
 .blancoFijoMenu {
@@ -43,7 +44,7 @@
     display: flex;
     /* justify-content: center; */
     flex-wrap: wrap;
-    padding: 0 0 3em 0;
+    padding: 1em 0 3em 0;
     font-size: 3em;
 }
 
@@ -69,6 +70,11 @@
 .navbar-toggler {
     border: none;
 }
+
+.navbar-brand {
+    margin-left: -0.5rem;
+}
+
 
 /* .navbar-toggler-icon {
     background-image: url(../recursos/menu.png);
@@ -115,6 +121,7 @@ main {
     overflow: hidden;
     padding: 20px 0;
     margin: auto;
+    transform: scale(1.2);
 }
 
 .carousel-item {
@@ -164,7 +171,7 @@ main {
 section {
     position: sticky;
     transition: 0.5s ease;
-    border: 1px solid rgb(163, 163, 163);
+    border: 0.5px solid rgb(202, 217, 220);
     border-radius: 15px;
     box-shadow: 1px 0px 20px rgb(207, 245, 137);
     background-color: white;
@@ -174,13 +181,19 @@ section {
     top: 0;
 }
 
+
+/* NOVEDADES */
+
 #novedades {
     height: 99%;
+    padding: 8em 1em 8em 1em;
 }
 
 #novedades > h1 {
     font-size: 6em;
     writing-mode: vertical-lr;
+    padding-bottom: 1em;
+    padding-left: 5px;
 }
 
 .col-md-4 {
@@ -196,11 +209,10 @@ section {
     border: 1px solid grey;
     border-radius: 25px;
     font-size: 1.2em;
-    vertical-align: baseline;
     text-align: center;
-    height: 1.5em;
     width: 80%;
     float: left;
+    padding: 0.9em 0 1em 0;
 }
 
 .btn {
@@ -213,13 +225,13 @@ section {
 }
 
 
-
+/* BEST SELLERS */
 
 #best_sellers{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2em 0;
+    padding: 8em 1em 8em 1em;
 }
 
 #best_sellers > img{
@@ -230,7 +242,7 @@ section {
 .text{
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    padding-right: 35px;
+    padding-right: 25px;
 
     
 }
@@ -245,7 +257,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 58vh;
-    
+    padding-left: 10px;
 }
 
 #galery > div{
@@ -342,15 +354,32 @@ footer {
     background-color: white;
 }
 
+
+
+/* PÁGINA PRODUCTO */
+
 .miami {
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 610px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: flex-start;
     overflow: hidden;
+    background-color: #777E5C;
+    border-radius: 15px;
 }
+
+.miami > h1 {
+    font-size: 1.5em;
+}
+
+#agua {
+    height: 520px;
+    width: 600px;
+    object-fit: cover;
+    object-position: 20% 65%;
+}
+
 
 
 
@@ -367,7 +396,6 @@ footer {
         padding-right: 2rem;
     }
 }
-
 
 
 @media (max-width: 576px) {
