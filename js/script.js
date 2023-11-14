@@ -43,7 +43,7 @@ function fijarMenu() {
       document.getElementById("blanco").className = "blancoFijo";
       document.getElementById("mdesplegado").className = "mdesplegado";
       document.getElementById("blancoFijoMenu").className = "blancoFijoMenu";
-      document.getElementById("encontrar").className = "micono";
+    //   document.getElementById("encontrar").className = "micono";
     } else {
       document.getElementById("blanco").className = "navbar";
     }

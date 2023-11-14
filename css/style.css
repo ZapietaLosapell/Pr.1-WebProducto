@@ -26,7 +26,6 @@
     position: fixed;
     font-size: 1.1em;
     padding-bottom: 15px;
-    height: 6rem;
     display: flex;
     align-items: center;
     gap: 25px 10px;
@@ -42,9 +41,10 @@
 .mdesplegado {
     list-style: none;
     display: flex;
+    /* justify-content: center; */
     flex-wrap: wrap;
-    gap: 10px 10px;
-    top: 0;
+    padding: 0 0 3em 0;
+    font-size: 3em;
 }
 
 .menuestilo {
@@ -70,9 +70,9 @@
     border: none;
 }
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
     background-image: url(../recursos/menu.png);
-}
+} */
 
 .embed-responsive-item {
     width: 100vw;
@@ -99,11 +99,11 @@ main {
     justify-content: center;
     margin: auto;
     z-index: 0;
-    height: 100vh;
+    height: 110vh;
 }
 
 .carousel-indicators {
-    bottom: 6rem;
+    bottom: 5em;
     max-width: 250px;
     margin: auto;
     opacity: 0.3;
@@ -354,7 +354,19 @@ footer {
 
 
 
+@media (max-width: 900px) {
 
+    .mdesplegado {
+        padding: 2em 0 0 0;
+        flex-direction: column; 
+    }
+
+    #perfumes {
+        font-size: 2em;
+        margin-top: 0.7em;
+        padding-right: 2rem;
+    }
+}
 
 
 
@@ -414,6 +426,7 @@ footer {
     #perfumes {
         font-size: 2em;
         padding-right: 0;
+        margin-top: 0;
     }
 
     .navbar {
@@ -431,8 +444,7 @@ footer {
 
     .mdesplegado {
         padding-left: 0;
-        padding-top: 1em;
-        flex-direction: column;
+        padding-top: 10px;
     }  
     
     .blancoFijo {
