@@ -364,10 +364,6 @@ section {
 .ap > img{
     width: 130px;
 }
-.contacto{
-    font-size: 16px;
-    color: #283106;
-}
 
 .politicas{
     background-color: #D2D8BE;
@@ -377,18 +373,31 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 16px;
-    color: #283106;
 }
 
 .redes{
     background-color: #283106;
-    color: #D2D8BE;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
+
+.contacto > ul > li > a {
+    color: #283106;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+.politicas > ul > li > a {
+    font-family: 'Playfair Display', serif;
+    color: #283106;
+    font-size: 16px;
+}
+.redes > ul > li > a {
+    color: #D2D8BE;
+    font-family: 'Playfair Display', serif;
+}
+
 ul{
     text-decoration: none;
     list-style: none;
