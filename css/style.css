@@ -171,3 +171,32 @@ ul{
     text-decoration: none;
     list-style: none;
 }
+
+/*Apartado naturaleza*/
+
+.naturaleza > img{
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .naturaleza > div{
+      position: absolute; top: 260%; right: 16%;
+      display: block;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      padding: 10px;
+  }
+
+  .naturaleza > div > h3{
+    font-size: 80px;
+    font-weight: bold;
+  }
+
+  .naturaleza > div > h2{
+    font-size: 40px;
+  }
+
+  .naturaleza > div > p{
+    font-size: 20px;
+  }
