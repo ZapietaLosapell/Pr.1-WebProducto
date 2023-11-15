@@ -185,7 +185,8 @@ ul{
       flex-direction: column;
       text-align: center;
       justify-content: center;
-      padding: 10px;
+      color: whitesmoke; opacity: 80%;
+      
   }
 
   .naturaleza > div > h3{
@@ -198,5 +199,8 @@ ul{
   }
 
   .naturaleza > div > p{
+    font-size: 20px;
+  }
+  .naturaleza > div > ul > li > a{
     font-size: 20px;
   }
