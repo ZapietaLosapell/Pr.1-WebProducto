@@ -23,15 +23,15 @@
     background-color: white;
     transition: 0.6s ease-in;
     min-width: 100vw;
-    position: fixed;
+        position: fixed;
     font-size: 1.1em;
     padding-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 25px 10px;
     height: 25%;
-    padding: 0 20px;
-    margin-left: 0.5rem;
+    padding: 0 40px;
+    z-index: 0;
 }
 
 .blancoFijoMenu {
@@ -90,7 +90,7 @@
     z-index: -1;  
 }
 
-.altura {
+.altura-header {
     height: 100vh;
 }
 
@@ -104,7 +104,6 @@ main {
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    z-index: 0;
     height: 110vh;
 }
 
@@ -175,53 +174,10 @@ section {
     border-radius: 15px;
     box-shadow: 1px 0px 20px rgb(207, 245, 137);
     background-color: white;
-    max-width: 99%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     top: 0;
-}
-
-
-/* NOVEDADES */
-
-#novedades {
-    height: 99%;
-    padding: 8em 1em 8em 1em;
-}
-
-#novedades > h1 {
-    font-size: 6em;
-    writing-mode: vertical-lr;
-    padding-bottom: 1em;
-    padding-left: 5px;
-}
-
-.col-md-4 {
-    width: 20rem;
-    padding-left: 1rem;
-}
-
-.card {
-    overflow: hidden;
-}
-
-.card-title {
-    border: 1px solid grey;
-    border-radius: 25px;
-    font-size: 1.2em;
-    text-align: center;
-    width: 80%;
-    float: left;
-    padding: 0.9em 0 1em 0;
-}
-
-.btn {
-    background-color: transparent;
-    color: black;
-    border: none;
-    font-size: 2em;
-    float: right;
-    width: 4rem;
 }
 
 
@@ -326,7 +282,7 @@ section {
     transition-timing-function: ease;
 }
 
-#galery > div > div > h3, p,li{
+#galery > div > div > h3, p, li{
     font-size: 15px;
     display: flex;
     justify-content: center;
@@ -348,9 +304,57 @@ section {
 }
 
 
+/* NOVEDADES */
+
+#novedades {
+    height: 99%;
+    padding: 8em 1em 8em 1em;
+}
+
+#novedades > h1 {
+    font-size: 6em;
+    writing-mode: vertical-lr;
+    padding-bottom: 1em;
+    padding-left: 5px;
+}
+
+.col-md-4 {
+    width: 20rem;
+    padding-left: 1rem;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-title {
+    border: 1px solid grey;
+    border-radius: 25px;
+    font-size: 1.2em;
+    text-align: center;
+    width: 80%;
+    float: left;
+    padding: 0.9em 0 1em 0;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 2em;
+    float: right;
+    width: 4rem;
+}
+
+
+
 
 /*footer*/
 
+footer {
+    padding-top: 5px;
+    background-color: white;
+}
 .ap{
     background-color: #D2D8BE;
     display: flex;
@@ -408,27 +412,92 @@ ul{
 /* PÁGINA PRODUCTO */
 
 .miami {
-    height: 600px;
-    width: 610px;
+    height: 620px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    overflow: hidden;
-    background-color: #777E5C;
+    align-items: center;
+    border: 1px solid;
     border-radius: 15px;
+    margin-top: 2rem;
+    padding-top: 0.3rem;
 }
 
 .miami > h1 {
     font-size: 1.5em;
+    align-self: self-start
 }
 
 #agua {
-    height: 520px;
+    height: 500px;
     width: 600px;
     object-fit: cover;
-    object-position: 20% 65%;
+    object-position: 20% 60%;
 }
 
+.text-center {
+    margin-top: 2rem;
+}
+
+.espacio {
+    height: 27rem;
+}
+
+.btn-conocer {  
+    font-size: 20px;
+    width: 150px;
+    text-align: left;
+}
+
+.dropdown-menu {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+}
+
+.text-body-secondary {
+    max-width: 500px;
+}
+
+.text-body-secondary > p {
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+    word-spacing: -0.005em;
+    letter-spacing: 0.005em;
+    line-height: 1.6;
+}
+
+.text-body-secondary p:last-child {
+    color: rgb(89, 89, 89);
+    font-weight: 500;
+    text-align: left;
+}
+
+.btn-ingredientes {  
+    font-size: 20px;
+    width: 150px;
+    text-align: left;
+}
+
+ #compartir {
+    align-self: flex-end;
+    width: 26px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+ }
+
+.enlaces {
+    margin: 1rem 0;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color:rgb(4, 4, 4);
+    padding: 1rem;
+}
+.enlaces > a > img {
+    width: 20px;
+    padding-left: 0.2rem;
+}
 
 
 
