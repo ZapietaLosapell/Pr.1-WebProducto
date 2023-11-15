@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
 }
 
 .principal > img{
@@ -48,7 +49,15 @@
     align-items: center;
     box-shadow: 3px 3px 3px 0 rgba(20, 20, 20, 0.3);
     margin: 15px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
+
+.col > img:hover{
+    width: 20em;
+}
+
 .col > figcaption > h4{
     font-size: 15px;
     font-style: bold;
@@ -60,39 +69,69 @@
 }
 
 .row{
-    flex-wrap: wrap;
-    
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
 }
 
-.col-8{
-    width: 100%;
+.col-6 > img{
+    width: 90%;
     height: auto;
-
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px 0 rgba(20, 20, 20, 0.3);
+    margin: 15px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
-.col-8 > figcaption > h4{
+
+.col-6 > img:hover{
+    width: 37em;
+}
+
+.col-6 > figcaption > h4{
     font-size: 15px;
     font-style: bold;
 }
 
-.col-8 > figcaption > p{
+.col-6 > figcaption > p{
     font-size: 13px;
     color: grey;
 }
 
-.col-4{
-    width: 100%;
-    height: auto;
-
+.col-3{
+    justify-content: center;
+    align-items: center;
 }
-.col-4 > figcaption > h4{
+.col-3 > img{
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px 0 rgba(20, 20, 20, 0.3);
+    margin: 15px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.col-3 > img:hover{
+    width: 16em;
+}
+
+.col-3 > figcaption > h4{
     font-size: 15px;
     font-style: bold;
 }
 
-.col-4 > figcaption > p{
+.col-3 > figcaption > p{
     font-size: 13px;
     color: grey;
 }
+
+
+/*footer*/
 
 .ap{
     background-color: #D2D8BE;
