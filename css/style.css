@@ -309,6 +309,7 @@ section {
     transition-property: opacity;
     transition-duration: 1s;
     transition-timing-function: ease;
+    padding-top: 1rem;
 }
 
 #galery > div > div > h3, p, a {
@@ -318,7 +319,6 @@ section {
     align-items: center;
     text-align: center;
     margin: 10px;
-    padding-top: 1rem;
 }
 
 div > a {
