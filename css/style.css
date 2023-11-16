@@ -36,7 +36,7 @@ a:hover {
 }
 
 #blanco {
-    min-width: 99vw;
+    width: 100vw;
     position: fixed; 
     padding: 0 50px;
     z-index: 1;
@@ -101,9 +101,9 @@ a:hover {
 }
 
 
-/* .navbar-toggler-icon {
+.navbar-toggler-icon {
     background-image: url(../recursos/menu.png);
-} */
+}
 
 .embed-responsive-item {
     width: 100vw;
@@ -124,7 +124,7 @@ main {
 }
 
 #sec-carousel {
-    width: 700px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,7 +141,7 @@ main {
 }
 
 .carousel-inner {
-    width: 90%; 
+    width: 100vw;
     height: 550px;
     overflow: hidden;
     padding: 20px 0;
@@ -212,12 +212,9 @@ section {
 
 
 #best_sellers{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8em 1em 8em 1em;
+    padding: 20px 1em 0 1em;
     min-width: 100vw;
-    position: absolute;
+    height: auto;
 }
 
 #best_sellers > img{
@@ -226,11 +223,8 @@ section {
 }
 
 .text{
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    padding-right: 25px;
-
     
+    padding-right: 25px;   
 }
 .text > h2{
     font-size: 110px;
@@ -244,6 +238,7 @@ section {
     align-items: center;
     height: 58vh;
     padding-left: 10px;
+    
 }
 
 #galery > div{
@@ -370,6 +365,7 @@ div > a {
   }
   .naturaleza > div > ul > li > a{
     font-size: 20px;
+    font-family: 'Playfair Display', serif;
   }
 
 
@@ -506,7 +502,6 @@ ul{
     border: 1px solid;
     border-radius: 15px;
     margin-top: 2rem;
-    /* background-color: #d3ef62; */
 }
 
 .miami h1 {
@@ -709,10 +704,12 @@ ul{
         margin-left: 0;
     }
 
-    #best_sellers > img{
-        width: 30%;
-        height: 25%;
+    #img-naturaleza {
+        width: auto;
+        height: 300px;
    }
+
+    
 }
 
 
@@ -734,7 +731,7 @@ ul{
     }
 
     .carousel-inner {
-        width: 95%;
+        width: 100vh;
         height: auto;
     }
 
@@ -817,17 +814,51 @@ ul{
         font-size: 0.4em;
     }
 
-    .naturaleza > div > h3 {
-        font-size: 50px;
+    #sec-carousel {
+        width: 300px;
     }
+
+    .naturaleza > div > h3{
+        font-size: 25px;
+        color: rgb(30, 30, 30);
+      }
+
+    #img-naturaleza {
+        height: 200px;
+        margin: 2rem 0;
+   }
         
 }
 
 
 @media (max-width: 350px) {
 
-    .naturaleza > div > h3 {
-        font-size: 30px;
+   .naturaleza > div > h3{
+    font-size: 18px;
+    color: rgb(30, 30, 30);
+  }
+
+  .naturaleza > div > h2{
+    font-size: 25px;
+  }
+
+  .naturaleza > div > p{
+    font-size: 15px;
+  }
+  .naturaleza > div > ul > li > a{
+    font-size: 15px;
+  }
+
+    .text > h2 {
+    font-size: 46px;
+    }
+
+    #sec-carousel {
+        width: 80vw;
+    }
+
+    .carrusel-immer {
+        width: 30px;
     }
 
     #perfumes {
