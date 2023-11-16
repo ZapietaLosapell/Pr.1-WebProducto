@@ -413,6 +413,7 @@ ul{
 
 .row.gx-4.producto-pag {
     padding: 0 1rem;
+    margin: 0;
 }
 
 .miami {
@@ -529,6 +530,8 @@ ul{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 
 @media (max-width: 900px) {
 
