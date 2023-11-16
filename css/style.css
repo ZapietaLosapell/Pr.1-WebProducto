@@ -355,6 +355,7 @@ footer {
     padding-top: 5px;
     background-color: white;
 }
+
 .ap{
     background-color: #D2D8BE;
     display: flex;
@@ -365,6 +366,7 @@ footer {
     padding: 50px;
     border-bottom: 1.5px rgb(4, 4, 4) solid;
 }
+
 .ap > img{
     width: 130px;
 }
@@ -372,11 +374,10 @@ footer {
 .politicas{
     background-color: #D2D8BE;
     padding: 20px;
+    text-align: center;
 }
-.politicas > ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.politicas > ul > li{
+    display: inline-block;
 }
 
 .redes{
@@ -392,11 +393,13 @@ footer {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
 }
+
 .politicas > ul > li > a {
     font-family: 'Playfair Display', serif;
     color: #283106;
     font-size: 16px;
 }
+
 .redes > ul > li > a {
     color: #D2D8BE;
     font-family: 'Playfair Display', serif;
@@ -405,8 +408,8 @@ footer {
 ul{
     text-decoration: none;
     list-style: none;
+    padding-left: 0;
 }
-
 
 
 /* PÁGINA PRODUCTO */
@@ -643,6 +646,10 @@ ul{
     .blancoFijoMenu {
         display: contents;
         position: absolute;
+    }
+
+    .ap > img{
+        padding: 0 20px 10px 20px;
     }
         
 }
