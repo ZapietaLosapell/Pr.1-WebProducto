@@ -836,4 +836,13 @@ ul{
             filter: grayscale(0%);
         }
     }
+
+    #galery > div{
+        width: 100%;
+        flex: 22%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3px;  
+    }
 }
