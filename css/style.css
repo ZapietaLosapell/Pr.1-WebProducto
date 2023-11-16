@@ -210,11 +210,14 @@ section {
 
 /* BEST SELLERS */
 
+
 #best_sellers{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8em 1em 8em 1em;
+    min-width: 100vw;
+    position: absolute;
 }
 
 #best_sellers > img{
@@ -705,6 +708,11 @@ ul{
         text-align: center;
         margin-left: 0;
     }
+
+    #best_sellers > img{
+        width: 30%;
+        height: 25%;
+   }
 }
 
 
