@@ -522,6 +522,11 @@ ul{
     object-position: 100% 65%;
 }
 
+#agua:hover {
+    filter: grayscale(50%);
+    transition: 0.8s ease;
+}
+
 #compartir {
     align-self: flex-end;
     width: 26px;
