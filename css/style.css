@@ -412,7 +412,7 @@ ul{
 /* PÁGINA PRODUCTO */
 
 .miami {
-    height: 620px;
+    height: 680px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -420,18 +420,21 @@ ul{
     border-radius: 15px;
     margin-top: 2rem;
     padding-top: 0.3rem;
+    /* background-color: #d3ef62; */
 }
 
 .miami > h1 {
     font-size: 1.5em;
-    align-self: self-start
+    align-self: start;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 #agua {
-    height: 500px;
-    width: 600px;
+    height: 570px;
+    width: 700px;
     object-fit: cover;
-    object-position: 20% 60%;
+    object-position: 20% 65%;
 }
 
 .text-center {
@@ -469,8 +472,8 @@ ul{
 /* .text-body-secondary p:last-child */
 
 .text-body-secondary h6 em {
-    color: rgb(4, 4, 4);
-    font-weight: 500;
+    color: rgb(51, 51, 51);
+
 }
 
 .btn-ingredientes {  
@@ -483,11 +486,12 @@ ul{
     align-self: flex-end;
     width: 26px;
     padding-top: 6px;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
  }
 
 .enlaces {
-    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 8rem;
 }
 
 .enlaces a {
