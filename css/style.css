@@ -31,7 +31,7 @@
     gap: 25px 10px;
     height: 25%;
     padding: 0 40px;
-    z-index: 0;
+    z-index: 1;
 }
 
 #blanco {
@@ -43,7 +43,7 @@
     gap: 25px 10px;
     height: 20%;
     padding: 0 40px;
-    z-index: 0;
+    z-index: 1;
 }
 
 .menuestilo {
@@ -53,7 +53,6 @@
 .blancoFijoMenu {
     display: contents;
     position: absolute;
-    /* font-size: 1em; */
 }
 
 .mdesplegado {
@@ -129,6 +128,7 @@ main {
     justify-content: center;
     margin: auto;
     height: 110vh;
+    z-index: 2;
 }
 
 .carousel-indicators {
@@ -202,6 +202,7 @@ section {
     display: flex;
     justify-content: center;
     top: 0;
+    z-index: 2;
 }
 
 
@@ -479,8 +480,9 @@ ul{
 
 /* PÁGINA PRODUCTO */
 
+
 .row.gx-4.producto-pag {
-    padding: 0 1rem;
+    padding: 10rem 1rem;
     margin: 0;
 }
 
@@ -517,6 +519,10 @@ ul{
     padding-bottom: 6px;
     padding-right: 0.1rem;
  }
+
+.row .col-lg {
+    z-index: 0;
+}
 
 .conocer-ingredientes {
     margin-top: 2rem;
