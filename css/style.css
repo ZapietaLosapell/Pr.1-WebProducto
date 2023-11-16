@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 #perfumes {
     color: rgb(29, 29, 29);
     font-size: 4em;
@@ -24,7 +28,7 @@
     background-color: white;
     transition: 0.6s ease-in;
     min-width: 100vw;
-        position: fixed;
+    position: fixed;
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -307,21 +311,21 @@ section {
     transition-timing-function: ease;
 }
 
-#galery > div > div > h3, p, li{
-    font-size: 15px;
+#galery > div > div > h3, p, a {
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 10px;
+    padding-top: 1rem;
 }
 
-.ver > a{
+div > a {
     color: white;
     text-align: center; 
     text-decoration: none;
     list-style: none;
-    font-size: 10px;
 }
 
 #galery > div > div:hover{
@@ -380,8 +384,8 @@ section {
 #novedades > h1 {
     font-size: 6em;
     writing-mode: vertical-lr;
-    padding-bottom: 1em;
-    padding-left: 5px;
+    padding-left: 1rem;
+    font-weight: bold;
 }
 
 .col-md-4 {
@@ -412,14 +416,21 @@ section {
     width: 4rem;
 }
 
-
+.card-body a {
+    text-decoration: none;
+}
 
 
 /*footer*/
 
 footer {
-    padding-top: 5px;
+    position: sticky;
+    border: 0.5px solid rgb(202, 217, 220);
+    border-radius: 15px;
+    box-shadow: 1px 0px 20px rgb(207, 245, 137);
     background-color: white;
+    max-width: 100%;
+    z-index: 2;
 }
 
 .ap{
