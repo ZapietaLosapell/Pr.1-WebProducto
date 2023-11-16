@@ -39,7 +39,7 @@ pase2.forEach(cardb => {
 window.onscroll = function() {fijarMenu()};
 
 function fijarMenu() {
-    if (document.documentElement.scrollTop > 70) {
+    if (document.documentElement.scrollTop > 200) {
       document.getElementById("blanco").className = "blancoFijo";
       document.getElementById("mdesplegado").className = "mdesplegado";
       document.getElementById("blancoFijoMenu").className = "blancoFijoMenu";
