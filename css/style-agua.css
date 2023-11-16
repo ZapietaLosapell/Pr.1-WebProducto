@@ -6,6 +6,34 @@
     scroll-behavior: smooth;
 }
 
+.navbarNav{
+    display: inline-block;
+}
+
+.nav-item {
+    text-align: center;
+    font-size: 10px;
+}
+
+.nav-item > a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    color: rgb(4, 4, 4);
+}
+
+.navbar-toggler {
+    border: none;
+    transition: 0.6s ease;
+}
+
+#perfumes {
+    font-size: 1em;
+    padding-right: 0.5em;
+    padding-left: 1em;
+}
+
+
+
 .principal > img{
   width: 100%;
   z-index: -1;
