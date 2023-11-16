@@ -443,38 +443,39 @@ ul{
 }
 
 .btn-conocer {  
-    font-size: 20px;
-    width: 150px;
+    font-size: 1.2em;
+    width: 140px;
     text-align: left;
 }
 
 .dropdown-menu {
-    width: 500px;
+    width: 510px;
     padding: 0;
     margin: 0;
 }
 
 .text-body-secondary {
-    max-width: 500px;
+    max-width: 510px;
 }
 
-.text-body-secondary > p {
-    font-family: 'Inter', sans-serif;
+.text-body-secondary > h6 {
+    /* font-family: 'Inter', sans-serif;
     text-align: justify;
     word-spacing: -0.005em;
-    letter-spacing: 0.005em;
-    line-height: 1.6;
+    letter-spacing: 0.005em; */
+    line-height: 1.4;
 }
 
-.text-body-secondary p:last-child {
-    color: rgb(89, 89, 89);
+/* .text-body-secondary p:last-child */
+
+.text-body-secondary h6 em {
+    color: rgb(4, 4, 4);
     font-weight: 500;
-    text-align: left;
 }
 
 .btn-ingredientes {  
-    font-size: 20px;
-    width: 150px;
+    font-size: 1.2em;
+    width: 190px;
     text-align: left;
 }
 
