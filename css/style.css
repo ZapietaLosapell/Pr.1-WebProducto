@@ -229,7 +229,7 @@ section {
 }
 .text > h2{
     font-size: 110px;
-    font-style: bold;
+    font-weight: bold;
 }
 
 #galery{
@@ -601,7 +601,7 @@ ul{
 .enlaces a:hover {
     background-color: rgb(30, 30, 30);
     color: white;
-    transition: 0.5 ease-in;
+    transition: 0.5s ease-in;
 }
 
 .enlaces > a > img {
@@ -737,9 +737,10 @@ ul{
     .card-1.sale {
         transform: rotateY(0); 
         filter: blur(1px);
-        &:hover {
-            filter: blur(0px);
-        }
+    }
+
+    .card-1.sale:hover {
+        filter: blur(0);
     }
 
     .card-2.backSale {
@@ -825,11 +826,11 @@ ul{
     }
 
     .card-2.backSale {
-        filter: gray;
-        -webkit-filter: grayscale(50%);
+        filter: grayscale(50%);
         transition: filter 0.8s ease-in;
-        &:hover {
-            filter: grayscale(0%);
-        }
+    }
+
+    .card-2.backSale:hover {
+        filter: grayscale(0);
     }
 }
