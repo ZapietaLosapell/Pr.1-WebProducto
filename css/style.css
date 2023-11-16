@@ -431,7 +431,7 @@ ul{
 }
 
 .miami h1 {
-    font-size: 1em;
+    font-size: 1.1em;
     align-self: start;
     padding-bottom: 5px;
     padding-top: 8px;
@@ -440,7 +440,7 @@ ul{
 }
 
 #agua {
-    height: 590px;
+    height: 587px;
     width: 600px;
     object-fit: cover;
     object-position: 100% 65%;
@@ -453,20 +453,26 @@ ul{
     padding-right: 0.1rem;
  }
 
-.text-center {
+.conocer-ingredientes {
     margin-top: 2rem;
 }
 
-.btn-conocer {  
-    font-size: 1.2em;
-    width: 140px;
-    text-align: left;
+.dropdown-menu {
+    width: 510px;  
 }
 
-.dropdown-menu {
-    width: 510px;
-    padding: 0;
-    margin: 0;
+.dropdown {
+    border: 1px rgb(30, 30, 30) solid;
+    border-radius: 5px;
+}
+
+.dropdown:hover {
+    border: none;
+    transition: 0.6s ease-in;
+}
+
+.btn:hover {
+    background-color: rgb(30, 30, 30);
 }
 
 .text-body-secondary {
@@ -484,30 +490,34 @@ ul{
     font-weight: 400;
 }
 
-/* .text-body-secondary p:last-child */
-
 .text-body-secondary h6 em {
-    color: rgb(161, 161, 161);
+    color: rgb(30, 30, 30);
     font-style: normal;
     word-spacing: inherit;
     letter-spacing: inherit;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.btn-conocer {  
+    font-size: 1.1em;
+    width: 140px;
 }
 
 .btn-ingredientes {  
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: 190px;
-    text-align: left;
 }
 
 .btn-cuidados {  
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: 240px;
-    text-align: left;
 }
 
 .enlaces {
     margin-top: 1rem;
     margin-bottom: 8rem;
+    margin-left: 2rem;
 }
 
 .enlaces a {
@@ -516,6 +526,13 @@ ul{
     padding: 1rem;
     font-size: 20px;
 }
+
+.enlaces a:hover {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    transition: 0.5 ease-in;
+}
+
 .enlaces > a > img {
     width: 20px;
     padding-left: 0.2rem;
@@ -536,7 +553,7 @@ ul{
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
 
     .mdesplegado {
         padding: 2em 0 0 0;
@@ -556,6 +573,53 @@ ul{
 
     .buitre {
         overflow: hidden;
+    }
+
+    .btn-conocer {  
+        width: 100vw;
+    }
+    
+    .btn-ingredientes {  
+        width: 100vw;
+    }
+    
+    .btn-cuidados {  
+        width: 100vw;
+    }
+
+    
+    .row .precio {
+        padding-left: 43%;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    .dropdown {
+        border-bottom: 1px rgb(30, 30, 30) solid;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+    }
+
+    .row .precio {
+        border-bottom: 1px rgb(30, 30, 30) solid;
+    }
+    
+    .text-body-secondary {
+        max-width: 100%;
+    }
+
+    .espacio {
+        height: 19rem;
+    }
+
+    .enlaces {
+        margin-top: 3rem;
+        text-align: center;
+        margin-left: 0;
     }
 }
 
@@ -650,6 +714,14 @@ ul{
 
     .ap > img{
         padding: 0 20px 10px 20px;
+    }
+
+    .text-body-secondary h6 {
+        word-spacing: 0.1em;
+        line-height: 1.6;
+        text-transform: none;
+        text-align: left;
+        font-size: 0.4em;
     }
         
 }
