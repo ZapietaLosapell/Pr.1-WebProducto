@@ -55,12 +55,12 @@
 }
 
 .col > img:hover{
-    width: 20em;
+    width: 18em;
 }
 
 .col > figcaption > h4{
-    font-size: 15px;
-    font-style: bold;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .col > figcaption > p{
@@ -91,8 +91,8 @@
 }
 
 .col-6 > figcaption > h4{
-    font-size: 15px;
-    font-style: bold;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .col-6 > figcaption > p{
@@ -121,8 +121,8 @@
 }
 
 .col-3 > figcaption > h4{
-    font-size: 15px;
-    font-style: bold;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .col-3 > figcaption > p{
@@ -176,3 +176,151 @@ ul{
     list-style: none;
 }
 
+/*responsive*/
+
+@media screen and
+(min-width: 768px) and
+(max-width:1023px){
+    .principal > img{
+        width: 100%;
+        z-index: -1;
+      }
+    .principal > div{
+        position: absolute; top: 25%; left: 67%;;
+        width: 190px;
+    }
+    .principal > div >h3{
+        font-size: 40px;
+    }
+    .principal > div > p{
+        font-size: 15px;
+    }
+
+    #productos > h2{
+        padding: 30px;
+        font-size: 40px;
+    }
+
+    .col > img{
+        width: 90%;
+        height: auto;
+    }
+    .col > img:hover{
+        width: 10em;
+        margin: 5px;
+    }
+    .col > figcaption > h4{
+        font-size: 10px;
+    }
+    
+    .col > figcaption > p{
+        font-size: 8px;
+    }
+
+    .col-6 > img{
+        width: 90%;
+        height: auto;
+    }
+    .col-6 > img:hover{
+        width: 10em;
+        margin: 5px;
+    }
+    .col-6 > figcaption > h4{
+        font-size: 10px;
+    }
+    
+    .col-6 > figcaption > p{
+        font-size: 8px;
+    }
+
+    .col-3 > img{
+        width: 90%;
+        height: auto;
+    }
+    .col-3 > img:hover{
+        width: 10em;
+        margin: 5px;
+    }
+    .col-3 > figcaption > h4{
+        font-size: 10px;
+    }
+    
+    .col-3 > figcaption > p{
+        font-size: 8px;
+    }
+
+    
+
+}
+
+@media screen and
+(max-width: 667px){
+   
+    .principal > img{
+        width: 100%;
+        height: auto;
+      }
+
+      .principal > div{
+        position: absolute; top: 23%; left: 60%;;
+        width: 135px;
+    }
+    .principal > div >h3{
+        font-size: 20px;
+    }
+    .principal > div > p{
+        font-size: 7.5px;
+    }
+    #productos > h2{
+        padding: 15px;
+        font-size: 20px;
+    }
+    .col > img{
+        width: 90%;
+
+    }
+    .col > img:hover{
+        width: 2em;
+        margin: 2px;
+    }
+    .col > figcaption > h4{
+        font-size: 5px;
+    }
+    
+    .col > figcaption > p{
+        font-size: 5px;
+    }
+
+    .col-6 > img{
+        width: 90%;
+
+    }
+    .col-6 > img:hover{
+        width: 2em;
+        margin: 2px;
+    }
+    .col-6 > figcaption > h4{
+        font-size: 5px;
+    }
+    
+    .col-6 > figcaption > p{
+        font-size: 5px;
+    }
+
+    .col-3 > img{
+        width: 90%;
+
+    }
+    .col-3 > img:hover{
+        width: 2em;
+        margin: 2px;
+    }
+    .col-3 > figcaption > h4{
+        font-size: 5px;
+    }
+    
+    .col-3 > figcaption > p{
+        font-size: 5px;
+    }
+
+}
