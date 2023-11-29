@@ -11,43 +11,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
-<body">
-<header>       
-    <nav id="blanco" class="navbar navbar-expand-sm justify-content-center">
-        <div  id="blancoFijoMenu" class="container-fluid p-0 menuestilo">
-            <div>
-                <a class="navbar-brand" href="index.html">
-                    <img src="recursos/logo" alt="Logotipo de Loewe" width="150" class="d-inline-block align-text-top pt-4">
-                </a>
+<body>
+<header>
+    <div class="altura-header">       
+        <nav id="blanco" class="navbar navbar-expand-sm justify-content-center">
+            <div  id="blancoFijoMenu" class="container-fluid p-0 menuestilo">
+                <div id="divloewe">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="recursos/logo-4.png" alt="Logotipo de Loewe" class="d-inline-block align-text-top pt-4">
+                    </a>
+                </div>
+                <div>
+                    <h2 id="perfumes">PERFUMES</h2>
+                </div>
+                <div id="encontrar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div id="navbarNav" class="collapse navbar-collapse">
+                    <ul id="mdesplegado" class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="seccion-agua.html">MUJER</a></li>
+                        <li class="nav-item"><a class="nav-link" href="seccion-agua.html">HOMBRE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="seccion-agua.html">LOEWE X ON</a></li>
+                        <li class="nav-item"><a class="nav-link" href="producto.html">REGALOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="producto.html">ARTESANÍA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="producto.html">STORIES</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h1 id="perfumes">PERFUMES</h1>
-            </div>
-            <div id="encontrar">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div id="navbarNav" class="collapse navbar-collapse blanco-2">
-                <ul id="mdesplegado" class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">MUJER</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">HOMBRE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">LOEWE X ON</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">REGALOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ARTESANÍA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">STORIES</a></li>
-                </ul>
+        </nav>
+        
+        <div class="container-fluid">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" loop autoplay muted="muted">
+                    <source src="recursos/loewevideo.mp4" type="video/mp4">
+                    <img id="alternative" src="recursos/alternative.jpg" alt="Una flor sobre el agua flotando">
+                </video>
             </div>
         </div>
-    </nav>
-     
-    <div class="container-fluid">
-        <div class="embed-responsive embed-responsive-16by9">
-            <video class="embed-responsive-item" loop autoplay muted="muted">
-                <source src="recursos/loewevideo.mp4" type="video/mp4">
-                 <img id="alternative" src="recursos/alternative.jpg">
-            </video>
-         </div>
     </div>
 </header>
 
@@ -123,75 +125,95 @@
         </div>
     </div>
 
-    <section id="best_sellers">
-        <div class="text">
-                <h2>Best Sellers</h2>
-             </div>
-            <img src="recursos/perfumes.png">
-
-        <div id="galery">
-                <div>
+    <section class="container" id="best_sellers">
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="text">
+                    <h2>Best Sellers</h2>
+                </div>
+                <img id="img-naturaleza" src="recursos/perfumes.png" alt="Colección de perfumen de LOEWE">
+            </div>
+         
+            <div class="col">
+                <div id="galery">
                     <div>
-                    <h3>Vela pequeña tomato leaves</h3>
-                    <p>85,00€</p>
-                    <li class="ver"><a href="#">Ver producto</a></li>
+                        <div>
+                            <h3>Vela pequeña tomato leaves</h3>
+                            <p>85,00€</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </div>
+                        
+                    <div>
+                        <div>
+                            <h3>Vela pequeña Cypress Balls</h3>
+                            <p>85,00€</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h3>Vela pequeña Oregano</h3>
+                            <p>85,00 €</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Tomato Leaves jabón líquido</h3>
+                            <p>60,00 €</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h3>LOEWE Aire Sutileza 50ml</h3>
+                            <p>84,00 €</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h3>LOEWE Esencia EDP 50ml</h3>
+                            <p>118,00 €</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h3>Vela pequeña tomato leaves</h3>
+                            <p>85,00€</p>
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h3>LOEWE 001 Woman Eau de Parfum 50ml</h3>
+                            <p>89,00€</p>
+                            <a href="#">Ver producto</a>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                    <h3>Vela pequeña Cypress Balls</h3>
-                    <p>85,00€</p>
-                    <li class="ver"><a href="#">Ver producto</a></li>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                    <h3>Vela pequeña Oregano</h3>
-                    <p>85,00 €</p>
-                    <li class="ver"><a href="#">Ver producto</a></li>
-                </div>
-                </div>
-
-                <div>
-                <div>
-                    <h3>Tomato Leaves jabón líquido</h3>
-                    <p>60,00 €</p>
-                    <li class="ver"><a href="#">Ver producto</a></li>
-                </div>
-                </div>
-
-                <div>
-                <div>
-                    <h3>LOEWE Aire Sutileza 50ml</h3>
-                    <p>84,00 €</p>
-                    <li class="ver"><a href="#">Ver producto</a></li>
-                </div>
             </div>
+    </div> 
+    </section>
 
-            <div>
-                <div>
-                    <h3>LOEWE Esencia EDP 50ml</h3>
-                    <p>118,00 €</p>
-                    <li class="ver"><a href="#">Ver producto</a></li>
-                </div>
+    <section>
+        <div class="naturaleza">
+            <div class="container">
+               <h3>NATURALEZA Y EMOCIÓN</h3>
+               <h2>botanical rainbow</h2>
+               <p>La nueva campaña de LOEWE está protagonizada por Úrsula Corberó, Greta Lee y Stéphane Bak.</p>
+               <ul>
+                    <li class="nav-item"><a class="nav-link" href="#">ver colección</a></li>
+               </ul>
             </div>
-
-            <div>
-                <div>
-                    <h3>Vela pequeña tomato leaves</h3>
-                    <p>85,00€</p>
-                    <li class="ver"><a href="#">Ver producto</a></li>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <h3>LOEWE 001 Woman Eau de Parfum 50ml</h3>
-                    <p>89,00€</p>
-                    <li class="ver"><a href="#">Ver producto</a></li>
-                </div>
-            </div>
-            </div> 
+       </div>
     </section>
 
     <section id="novedades">
@@ -223,11 +245,41 @@
                 </div>
             </article>
         </div>
-        <h1>Novedades</h1>   
-    </section>  
+        <h1>Novedades</h1>  
+    </section>   
 </main>
 
-    <footer></footer>
+    <footer>
+            <div class="ap">
+                <img src="recursos/loewe-logo-cuadrado.webp" alt="Isotipo de LOEWE">
+                <div class="contacto">
+                    <ul>
+                        <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Países/regiones de entrega</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Corporate Gifts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Preguntas frecuentes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Acerca de LOEWE Perfumes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Política ambiental y calidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="politicas">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#">Términos y condiciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Polítia de privacidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Formulario de devolución</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cookies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Parámetros Cookies</a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#">Instagram</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Facebook</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Youtube</a></li>
+                </ul>
+            </div>
+    </footer>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/script.js"></script>
 </body>

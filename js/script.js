@@ -37,15 +37,19 @@ pase2.forEach(cardb => {
 
 
 window.onscroll = function() {fijarMenu()};
+const header = document.getElementById("blanco");
 
 function fijarMenu() {
-    if (document.documentElement.scrollTop > 20) {
-      document.getElementById("blanco").className = "blancoFijo";
+    if (document.documentElement.scrollTop > 25) {
+      header.className = "blancoFijo";
+      header.firstElementChild.style.fontSize = "1em";
       document.getElementById("mdesplegado").className = "mdesplegado";
       document.getElementById("blancoFijoMenu").className = "blancoFijoMenu";
-      document.getElementById("encontrar").className = "micono";
     } else {
       document.getElementById("blanco").className = "navbar";
-      document.getElementById("navbarNav").className = "blanco-2";
     }
   }
+
+  
+  const collapseElementList = document.querySelectorAll('.collapse')
+  const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
