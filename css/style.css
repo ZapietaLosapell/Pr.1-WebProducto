@@ -495,7 +495,7 @@ ul{
 }
 
 .miami {
-    height: 680px;
+    height: 610px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -514,7 +514,7 @@ ul{
 }
 
 #agua {
-    height: 587px;
+    height: 517px;
     width: 600px;
     object-fit: cover;
     object-position: 100% 65%;
@@ -532,8 +532,16 @@ ul{
     padding-right: 0.1rem;
  }
 
+#compartir:hover {
+    background-color: #c0e3ac;
+}
+
 .row .col-lg {
     z-index: 0;
+}
+
+.contenido-perfume {
+    margin-top: 12.5rem;
 }
 
 .conocer-ingredientes {
@@ -598,7 +606,7 @@ ul{
 }
 
 .enlaces {
-    margin-top: 1rem;
+    margin-top: 8rem;
     margin-bottom: 8rem;
     margin-left: 2rem;
 }
@@ -622,7 +630,7 @@ ul{
 }
 
 .espacio {
-    height: 29rem;    
+    height: 26rem;    
     position: relative;
 }
 
@@ -709,6 +717,9 @@ ul{
         height: 300px;
    }
 
+    .contenido-perfume-derch {
+    margin-top: 0;
+    }
     
 }
 
@@ -741,6 +752,10 @@ ul{
         left: 0;
         margin-top: 0;
         padding: 0;   
+    }
+
+    #agua {
+        object-position: 50% 65%;
     }
 
     .carousel-indicators {
@@ -793,7 +808,7 @@ ul{
     
     .blancoFijo {
         gap: 0;
-        height: 25%;
+        height: 35%;
         flex-direction: column;
     }
     
@@ -811,7 +826,8 @@ ul{
         line-height: 1.6;
         text-transform: none;
         text-align: left;
-        font-size: 0.4em;
+        font-size: 0.6em;
+        overflow-wrap: break-word;
     }
 
     #sec-carousel {
@@ -821,12 +837,24 @@ ul{
     .naturaleza > div > h3{
         font-size: 25px;
         color: rgb(30, 30, 30);
-      }
+    }
 
     #img-naturaleza {
         height: 200px;
         margin: 2rem 0;
-   }
+    }
+
+    .btn-conocer {  
+    font-size: 1em;
+    }
+
+    .btn-ingredientes {  
+    font-size: 1em;
+    }
+
+    .btn-cuidados {  
+    font-size: 1em;
+    }
         
 }
 
@@ -886,4 +914,17 @@ ul{
     .card-2.backSale:hover {
         filter: grayscale(0);
     }
+
+    .btn-conocer {  
+        font-size: 0.8em;    
+    }
+    
+    .btn-ingredientes {  
+        font-size: 0.8em;    
+    }
+    
+    .btn-cuidados {  
+        font-size: 0.8em;  
+    }
+
 }
